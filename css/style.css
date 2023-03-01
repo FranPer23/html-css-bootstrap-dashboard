@@ -1,5 +1,5 @@
 :root {
-    --sidebar-width: 100px;
+    --sidebar-width: 60px;
     --header-height: 60px;
 
 }
@@ -51,11 +51,6 @@ ul a {
 .ms_header {
     height: var(--header-height);
     width: 100%;
-    top: 0;
-    right: 0;
-
-    /* debug */
-    border: 1px solid black;
     background-color: #ffffff;
 }
 
@@ -69,13 +64,16 @@ ul a {
     
 }
 .ms_top-content {
-    height: 20%;
+    height: fit-content;
     background-color: #1b72e8;
+    color: white;
 }
 
 .ms_bottom-content {
     height: 100%;
     background-color: #f8f9fa;
 }
+
+
                   
                     

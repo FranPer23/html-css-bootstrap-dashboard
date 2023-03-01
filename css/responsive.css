@@ -1,0 +1,5 @@
+@media screen and (min-width: 1140px) {
+    .ms_sidebar-content {
+        width: calc(30px + var(--sidebar-width))
+    }
+}
