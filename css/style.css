@@ -8,14 +8,14 @@
 .ms_wrapper {
     width: 100%;
     height: 100vh;
-    /* debug  */
-    background-color: grey;
+    
 }
 
 /* SIDEBAR  */
 .ms_sidebar {
    width: 100%;
    display: flex;
+   overflow-y: auto;
 }
 
 .ms_sidebar-content {
@@ -28,9 +28,8 @@
 }
 
 .ms_main-content {
-    /* overflow-y: auto; */
-    background-color: rgba(0,0,0,0.5);
-    
+    overflow-y: auto;
+   
 }
 
 .ms_content {
