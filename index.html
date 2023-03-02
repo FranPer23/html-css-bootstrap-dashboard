@@ -33,7 +33,7 @@
                     <form class="container-fluid">
                       <div class="input-group">
                         <span class="input-group-text bg-body-secondary" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text" class="form-control bg-body-secondary" placeholder="Prova a cercare:lezioni di laravel" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control bg-body-secondary" placeholder="Prova a cercare: lezioni di laravel" aria-label="Cerca" aria-describedby="basic-addon1">
                       </div>
                     </form>
                   </nav>
@@ -58,16 +58,16 @@
         </header>
         <nav class="ms_sidebar">
             
-            <div class="ms_content">
+            <div class="ms_content position-relative">
                 <div class="ms_sidebar-content">
-                    <ul class="list-group py-4 px-3">
-                        <li><a href=""><i class="fa-solid fa-house"></i></a><span>Home</span></li>
-                        <li><a href=""><i class="fa-solid fa-chart-simple"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-signal"></i></a></li>
+                    <ul class="py-3 px-3 lh-lg ">
+                        <li><a href=""><i class="fa-solid fa-house"></i></a> <span class="ms_sidebar-text">Home</span></li>
+                        <li><a href=""><i class="fa-solid fa-chart-simple"></i></i></a> <span class="ms_sidebar-text">Stats</span></a></li>
+                        <li><a href=""><i class="fa-solid fa-signal"></i></i></a> <span class="ms_sidebar-text">Signal</span></a></li>
                     </ul>
 
-                    <div class="ms_gear py-4 px-3">
-                        <i class="fa-solid fa-gear"></i>
+                    <div class="ms_gear px-3">
+                        <i class="fa-solid fa-gear bottom-0 start-50 translate-middle-x"></i></a><span class="ms_sidebar-text">Admin</span>
                     </div>
                 </div>
             </div>
@@ -76,12 +76,15 @@
                 <div class="container-fluid">
                     <div class="row ms_top-content py-4 row-cols-1 row-cols-md-3 g-3">
                         <div class="col ms_new-student">
-                            <span>Nuovo studente</span><i class="fa-regular fa-square-plus"></i>
+                            <span>Nuovo studente</span>  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
                         </div>
                         <div class="col ms_boolean">
                             <h1>Boolean</h1>
                             <button type="button" class="btn btn-primary"
-                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                            >
                             Custom button
                             </button>
                         </div>
@@ -102,11 +105,11 @@
                           <!-- Prossime classi -->
                           
                           <ul class="list-group">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                            <li class="list-group-item">A fourth item</li>
-                            <li class="list-group-item">And a fifth one</li>
+                            <li class="list-group-item"><h3>Prossime classi</h3></li>
+                            <li class="list-group-item"><img class="ms_class-logo " src="./img/class-avatar.jpg" alt=""> Classe 75</li>
+                            <li class="list-group-item"><img class="ms_class-logo " src="./img/class-avatar.jpg" alt=""> Classe 76</li>
+                            <li class="list-group-item"><img class="ms_class-logo " src="./img/class-avatar.jpg" alt=""> Classe 77</li>
+                            <li class="list-group-item"><img class="ms_class-logo " src="./img/class-avatar.jpg" alt=""> Classe 78</li>
                           </ul>                    
                                   
                           <!--/ Prossime classi -->
@@ -114,12 +117,12 @@
                           <!-- FAQ  -->
                           <div class="accordion accordion-flush border rounded rounded-end my-4" id="accordionFlushExample">
                             <ul class="list-group ">
-                              <li class="list-group-item">An item</li>
+                              <li class="list-group-item"><h3>F.A.Q.</h3></li>
                             </ul>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="flush-headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  Accordion Item #1
+                                  Come aggiungere uno studente?
                                 </button>
                               </h2>
                               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -129,7 +132,7 @@
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="flush-headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                  Accordion Item #2
+                                  Come posso accedere alle informazioni del mio account?
                                 </button>
                               </h2>
                               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -139,7 +142,7 @@
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="flush-headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                  Accordion Item #3
+                                  Posso usare questa dashboard da mobile?
                                 </button>
                               </h2>
                               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -154,12 +157,12 @@
                         <!-- Checklist ToDo  -->
                         <div class="col-12 col-lg-5 py-4">
                           <ul class="list-group">
-                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item"><h3>ToDo</h3></li>
                             <li class="list-group-item">
                               <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1">
-                                  Default checkbox
+                                  Kickoff nuove classi
                                 </label>
                               </div>
                             </li>
@@ -167,7 +170,7 @@
                               <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1">
-                                  Default checkbox
+                                  Lezioni su Bootstrap 5
                                 </label>
                               </div>
                             </li>
@@ -175,7 +178,7 @@
                               <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1">
-                                  Default checkbox
+                                  Controllare username studenti
                                 </label>
                               </div>
                             </li>
@@ -189,12 +192,15 @@
                               <div class="card" style="width: 100%;">
                                 <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title">Utenti attivi</h5>
+                                  <p class="card-text">Lista degli utenti attii in piattaforma nell'ultimo mese</p>
                                   <ul class="list-group list-group-flush">
-                                    <li class="list-group-item ">A second item</li>
-                                    <li class="list-group-item">A third item</li>
-                                    <li class="list-group-item">A third item</li>
+                                    <li class="list-group-item ">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
+                                    <a href="#" class="list-group-item list-group-item-action active text-primary text-decoration-underline  bg-transparent border border-0" aria-current="true">
+                                      Visualizza report approfondito
+                                    </a>
                                   </ul>
                                 </div>
                               </div>

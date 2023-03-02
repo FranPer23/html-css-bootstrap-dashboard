@@ -1,6 +1,17 @@
+@media screen and (max-width: 1139px) {
+    
+
+    .ms_sidebar-text {
+        display: none;
+
+    }
+
+    
+}
+
 @media screen and (min-width: 1140px) {
-    .ms_sidebar-content {
-        width: calc(30px + var(--sidebar-width))
+    :root {
+        --sidebar-width: 6.5rem;
     }
 }
 
@@ -8,6 +19,7 @@
     .ms_hide {
         display: none;
     }
+
 
 
 }
