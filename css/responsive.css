@@ -3,3 +3,17 @@
         width: calc(30px + var(--sidebar-width))
     }
 }
+
+@media screen and (max-width: 768px) {
+    .ms_hide {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 769px) {
+    .ms_mobile-logo {
+        display: none;
+    }
+}
